@@ -22,7 +22,7 @@ def preprocess_data(df):
     
     df = df.iloc[:, 3:]
     
-    df = df[df['Length of Membership'] > 3]
+    df = df[df['Length of Membership'] > 1]
 
     df.drop(columns=['Avg. Session Length'], inplace=True)
     return df
